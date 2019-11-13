@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="1dp"
+        android:id="@+id/layoutWeather">
+
+        <TextView
+            android:id="@+id/tempTxt"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_x="20dp"
+            android:layout_y="8dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/descriptionTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="20dp"
+            android:layout_y="59dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/windTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="20dp"
+            android:layout_y="87dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/cloudTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="20dp"
+            android:layout_y="111dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/humidityTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="20dp"
+            android:layout_y="138dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="146dp"
+            android:layout_x="164dp"
+            android:layout_y="19dp"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+    </AbsoluteLayout>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="527dp"
+        android:layout_y="201dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="311dp"
+            android:layout_y="0dp" />
+    </AbsoluteLayout>
+
+</AbsoluteLayout>
